@@ -20,4 +20,4 @@ Check out this simple calendar application in the following link :
 <img src="Assets/planner2.png" alt="">
 
 
-<img src="Assets/planner3.png" alt="">
+<img src="Assets/planner4.png" alt="">
