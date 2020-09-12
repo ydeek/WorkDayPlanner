@@ -21,7 +21,7 @@ const get_rows = () => {
         }
 
         $(".container").append(`
-    <div id="calendar-row${i}" class="row justify-content-md-center border-top border-bottom calendar-row">
+    <div id="calendar-row${i}" class="row justify-content-md-center border-top border-bottom calendar-row ${time}">
         <div id="time${i}" class="col-md-1 ${time}">${i <= 12 ? `${i} AM` : `${i - 12} PM`}</div>
         <textarea rows="3" id="textarea-${i}" class="col-md-10"></textarea>
         <button id="save2" class="col-md-1 hour-block" hour=${i}><i class="far fa-save"></i></button>
