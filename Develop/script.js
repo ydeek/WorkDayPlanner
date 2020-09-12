@@ -1,7 +1,7 @@
-
+//show current day and date using moment.js
 $("#currentDay").text(moment().format('MMMM Do YYYY'));
 
-
+//local torage created 
 $(".container").on("click", ".hour-block", function () {
     const hour = $(this).attr("hour")
     const id = `#textarea-${hour}`
@@ -9,8 +9,8 @@ $(".container").on("click", ".hour-block", function () {
     localStorage.setItem(hour, text)
 })
 
-
-const get_rows = () => {
+// create time blocks 
+const get_rows = (hour, text) => {
     const now = new Date();
     const hours = now.getHours()
     for (let i = 9; i < 18; i++) {
@@ -28,9 +28,11 @@ const get_rows = () => {
         <button id="save2" class="col-md-1 hour-block" hour=${i}><i class="far fa-save"></i></button>
       </div>`)
     }
+    //created functiong to saved text on the screen
     dataStorage(hour, text)
     function dataStorage(hour, text) {
         localStorage.getItem(hour, text);
+
     }
 }
 
