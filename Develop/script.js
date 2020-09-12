@@ -28,6 +28,7 @@ const get_rows = () => {
         <button id="save2" class="col-md-1 hour-block" hour=${i}><i class="far fa-save"></i></button>
       </div>`)
     }
+    dataStorage(hour, text)
     function dataStorage(hour, text) {
         localStorage.getItem(hour, text);
     }
