@@ -9,6 +9,7 @@ $(".container").on("click", ".hour-block", function () {
     localStorage.setItem(hour, text)
 })
 
+
 const get_rows = () => {
     const now = new Date();
     const hours = now.getHours()
@@ -27,6 +28,10 @@ const get_rows = () => {
         <button id="save2" class="col-md-1 hour-block" hour=${i}><i class="far fa-save"></i></button>
       </div>`)
     }
+    function dataStorage(hour, text) {
+        localStorage.getItem(hour, text);
+    }
 }
+
 
 get_rows()
